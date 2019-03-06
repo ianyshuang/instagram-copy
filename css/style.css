@@ -1,0 +1,392 @@
+/* 00 normalize css */
+html, body {
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a, a:hover, a:focus {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.user-photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.user-id {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.user-name {
+  position: relative;
+  font-size: 12px;
+  color: #8e8e8e;
+  left: 8px;
+  top: 5px;
+}
+
+.additional-info {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+/* 01 Header */ 
+
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  border: 1px solid #e0e0e0;
+}
+
+.container-top {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+nav {
+  margin: 10px 0;
+}
+nav div {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 28px;
+}
+
+#logo {
+  position: relative;
+  width: 30%;
+}
+
+#logo .slogan {
+  position: absolute;
+  height: 100%;
+  left: 15%;
+  top: 3px;
+}
+
+#logo .slogan img {
+  height: 100%;
+  width: auto;
+}
+
+#search-bar {
+  width: 40%;
+  position: relative;
+  bottom: 5px;
+}
+
+#search-bar input {
+  position: relative;
+  left: 20%;
+  text-align: center;
+  width: 55%;
+  padding: 5px 0;
+  background-color: #fcfcfc;
+  border: solid 1px #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+}
+
+#top-buttons {
+  float: right;
+}
+#top-buttons a {
+  padding: 0 13px;
+}
+
+/* 02 main-left */
+
+main {
+  width: 100%;
+  /* 從上面推80px，以免被header蓋住 */
+  padding-top: 80px;
+  position: relative;
+  background-color: #fcfcfc;
+}
+
+.container-bottom {
+  position: relative;
+  width: 65%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container-posts {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#main-left {
+  float: left;
+  width: 65%;
+  padding-top: 55px;
+}
+
+.posts {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 55px;
+}
+
+/* 02-1 post-user */
+
+.post-user a:first-child{
+  float: left;
+  padding: 15px 15px 15px 0px;
+}
+
+.post-user a:nth-child(2) {
+  position: relative;
+  top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* 02-2 post-img */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/* 02-3 post-button */
+.post-button-group .left-group {
+  float: left;
+}
+
+.post-button-group .left-group a i {
+  font-size: 25px;
+  margin: 10px 10px 10px 0px;
+}
+
+.post-button-group .right-group {
+  float: right;
+}
+
+.post-button-group .right-group a i {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+/* 02-4 post-likes */
+
+.likes, .likes:hover {
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+/* 02-5 post-content */
+.post-content {
+  padding-bottom: 3px;
+}
+
+.post-content .poster-id {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.post-content .more {
+  font-size: 13px;
+  color: #8e8e8e;
+  font-weight: 500;
+}
+
+/* 02-6 post-time */
+.post-time {
+  font-size: 13px;
+  color: #adadad;
+  padding-bottom: 10px;
+}
+
+/* 02-7 post-comment */
+.personal-comment {
+  /* 給option定位 */
+  position: relative;
+}
+
+.personal-comment form {
+  display: inline-block;
+  width: 90%;
+}
+
+.personal-comment textarea{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  outline: none;
+  resize: none;
+}
+
+.personal-comment textarea::placeholder {
+  font-size: 14px;
+  color: #8e8e8e;
+  font-weight: 500;
+}
+
+.option {
+  display: inline-block;
+  font-size: 20px;  
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+
+/* 03 main-right */ 
+#main-right {
+  position: fixed;
+  top: 135px;
+  right: 18%;
+  width: 20%;
+} 
+
+.block-title {
+  display: inline-block;
+  font-weight: 600;
+  color: #8e8e8e;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.side-button, .side-button:hover {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #000;
+  padding: 9px;
+}
+
+/* 03-1 personal-info */ 
+
+.my-info .info-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.my-info .info-right {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/* 03-2 story-block */
+.info-left img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  float: left;
+}
+
+.info-right {
+  float: left;
+  padding-left: 10px;
+
+}
+
+.story-block {
+  /* 給.block-title&.side-button定位用 */
+  position: relative;
+  margin-top: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.story-group {
+  padding: 10px;
+  overflow: scroll;
+  height: 200px;
+}
+
+.story {
+  padding: 10px 0px;
+}
+
+.suggested-users-block {
+  position: relative;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.suggestions {
+  padding: 10px 0;
+}
+
+.follow {
+  float: right;
+  padding-top: 8px;
+}
+
+.follow a {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #46a3ff;
+  font-weight: 600;
+}
